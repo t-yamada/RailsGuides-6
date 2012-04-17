@@ -1,9 +1,10 @@
 Routing::Application.routes.draw do
-  resources :comments
 
   resources :articles
 
-  resources :users
+  resources :comments
+
+  resources :users, :except => :update
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
