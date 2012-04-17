@@ -1,4 +1,4 @@
 class Article < ActiveRecord::Base
   has_many :comments
-  has_one :user
+  belongs_to :user
 end
